@@ -1,0 +1,266 @@
+.pr-9 { color: #000000; }
+.pr-8 { color: #1E1E1E; }
+.pr-7 { color: #3B3B3B; }
+.pr-6 { color: #5B5B5B; }
+.pr-5 { color: #919191; }
+.pr-4 { color: #C1C1C1; }
+.pr-3 { color: #E9E9E9; }
+.pr-2 { color: #F1F1F1; }
+.pr-1 { color: #FAFAFA; }
+.pr-0 { color: #FFFFFF; }
+h3 {
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 33.6px;
+}
+h4 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 40px;
+}
+h5 {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.fs-4 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 36px;
+}
+.fs-5 {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+}
+.fs-6 {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.bold {
+	font-weight: 400;
+}
+.container {
+	max-width: 1296px;
+	width: 100%;
+	margin: 0 auto;
+}
+/* header */
+.header {
+	padding: 32px 0;
+}
+.header .container {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.header .logo {
+	width: 90px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	width: 480px;
+}
+nav li {
+	font-size: 16px;
+	padding: 4px 8px;
+}
+nav li a {
+	color: #000;
+}
+nav .active {
+	font-weight: 700;
+	background: linear-gradient(to left, #919191, #919191) left top no-repeat, 
+	linear-gradient(to bottom, #919191, #919191) left top no-repeat, 
+	linear-gradient(to left, #919191, #919191) right top no-repeat,
+	linear-gradient(to bottom, #919191, #919191) right top no-repeat, 
+	linear-gradient(to left, #919191, #919191) left bottom no-repeat,
+	linear-gradient(to bottom, #919191, #919191) left bottom no-repeat,
+	linear-gradient(to left, #919191, #919191) right bottom no-repeat,
+	linear-gradient(to left, #919191, #919191) right bottom no-repeat;
+	background-size: 1px 6px, 6px 1px, 1px 6px, 6px 1px;
+}
+/* work-list */
+.blockquote {
+	padding: 80px 0;
+	background: #FAFAFA;
+}
+blockquote, .blockquote .intro {
+	width: 670px;
+	margin: 0 auto;
+	text-align: center;
+}
+blockquote {
+	padding: 59px 71px;
+	margin-bottom: 24px;
+	position: relative;
+}
+blockquote::before {
+	content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-left.png?raw=true);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+blockquote::after {
+	content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-right.png?raw=true);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+blockquote span {
+	position: relative;
+	z-index: 1;
+}
+blockquote span::before {
+	content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true);
+	position: absolute;
+	bottom: -11px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+}
+.blockquote .intro {
+	display: flex;
+	justify-content: space-between;
+}
+.blockquote .intro li {
+	width: 315px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5px;
+}
+.underline {
+	width: 24px;
+	height: 2px;
+	background: #C1C1C1;
+	margin-bottom: 8px;
+}
+.work {
+	margin: 120px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.work-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.work-list > li {
+	margin-bottom: 80px;
+}
+.work-list img {
+	border-radius: 8px;
+	margin-bottom: 16px;
+}
+.work-list .intro {
+	margin-left: 16px;
+}
+.work-list h2 {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 33.6px;
+	margin-bottom: 8px;
+}
+.work-list h2 a {
+	color: #383838;
+}
+.work-list p {
+	margin-bottom: 24px;
+}
+.tags {
+	display: flex;
+}
+.tags li {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	background: #f1f1f1;
+	margin-right: 16px;
+	border-radius: 16px;
+}
+.tags li:last-child {
+	margin-right: 0;
+}
+.tags a {
+	color: #3b3b3b;
+	padding: 4px 12px;
+	display: block;
+}
+/* pagination */
+.pagination {
+	display: flex;
+}
+.pagination li {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: center;
+	margin-right: 16px;
+}
+.pagination li a {
+	color: #3b3b3b;
+	padding: 2px 13px;
+	display: block;
+}
+.pagination li:last-child {
+	margin-right: 0;
+}
+.pagination .active {
+	background: #1e1e1e;
+	border-radius: 4px;
+}
+.pagination .active a {
+	color: #fff;
+}
+/* footer */
+.footer-bg {
+	background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true) no-repeat;
+	background-size: cover;
+	padding: 80px 0;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer li:last-child {
+	margin-bottom: 0;
+}
+.footer .logo img {
+	width: 120px;
+}
+.footer .logo li {
+	margin-bottom: 24px;
+}
+.social li {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	padding: 8px 24px;
+	border-radius: 8px;
+	border: 1px solid #c1c1c1;
+	background: #fff;
+	margin-bottom: 24px;
+	width: 306px;
+	color: #3b3b3b;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.social .active {
+	background: #000;
+	border: none;
+	color: #fff;
+}
+.social img {
+	margin-right: 8px;
+}
