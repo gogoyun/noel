@@ -1,49 +1,40 @@
-.pr-9 { color: #000000; }
-.pr-8 { color: #1E1E1E; }
-.pr-7 { color: #3B3B3B; }
-.pr-6 { color: #5B5B5B; }
-.pr-5 { color: #919191; }
-.pr-4 { color: #C1C1C1; }
-.pr-3 { color: #E9E9E9; }
-.pr-2 { color: #F1F1F1; }
-.pr-1 { color: #FAFAFA; }
-.pr-0 { color: #FFFFFF; }
+.text-primary-9 { color: #000000; }
+.text-primary-8 { color: #1E1E1E; }
+.text-primary-7 { color: #3B3B3B; }
+.text-primary-6 { color: #5B5B5B; }
+.text-primary-5 { color: #919191; }
+.text-primary-4 { color: #C1C1C1; }
+.text-primary-3 { color: #E9E9E9; }
+.text-primary-2 { color: #F1F1F1; }
+.text-primary-1 { color: #FAFAFA; }
+.text-primary-0 { color: #FFFFFF; }
+
+body {
+	line-height: 1.5;
+}
+h1 {
+	font-size: 24px;
+	line-height: 1.67;
+}
 h3 {
 	font-size: 28px;
-	font-weight: 400;
-	line-height: 33.6px;
-}
-h4 {
-	font-size: 24px;
-	font-weight: 400;
-	line-height: 40px;
+	line-height: 1.2;
 }
 h5 {
 	font-size: 20px;
-	font-weight: 400;
-	line-height: 24px;
+	line-height: 1.2;
 }
 .fs-4 {
 	font-size: 24px;
-	font-weight: 400;
-	line-height: 36px;
 }
 .fs-5 {
 	font-size: 20px;
-	font-weight: 400;
-	line-height: 30px;
 }
 .fs-6 {
 	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-}
-.bold {
-	font-weight: 400;
 }
 .container {
 	max-width: 1296px;
-	width: 100%;
 	margin: 0 auto;
 }
 /* header */
@@ -62,19 +53,19 @@ h5 {
 	top: 50%;
 	transform: translateY(-50%);
 }
-nav ul {
+.menu {
 	display: flex;
 	justify-content: space-between;
 	width: 480px;
 }
-nav li {
+.menu li {
 	font-size: 16px;
 	padding: 4px 8px;
 }
-nav li a {
+.menu li a {
 	color: #000;
 }
-nav .active {
+.menu .active {
 	font-weight: 700;
 	background: linear-gradient(to left, #919191, #919191) left top no-repeat, 
 	linear-gradient(to bottom, #919191, #919191) left top no-repeat, 
@@ -91,33 +82,33 @@ nav .active {
 	padding: 80px 0;
 	background: #FAFAFA;
 }
-blockquote, .blockquote .intro {
+.work-title, .blockquote .intro {
 	width: 670px;
 	margin: 0 auto;
 	text-align: center;
 }
-blockquote {
+.work-title {
 	padding: 59px 71px;
 	margin-bottom: 24px;
 	position: relative;
 }
-blockquote::before {
+.work-title::before {
 	content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-left.png?raw=true);
 	position: absolute;
 	top: 0;
 	left: 0;
 }
-blockquote::after {
+.work-title::after {
 	content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-right.png?raw=true);
 	position: absolute;
 	bottom: 0;
 	right: 0;
 }
-blockquote span {
+.work-title span {
 	position: relative;
 	z-index: 1;
 }
-blockquote span::before {
+.work-title span::before {
 	content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true);
 	position: absolute;
 	bottom: -11px;
@@ -144,7 +135,6 @@ blockquote span::before {
 }
 .work {
 	margin: 120px 0;
-	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
@@ -156,8 +146,10 @@ blockquote span::before {
 }
 .work-list > li {
 	margin-bottom: 80px;
+	width: 636px;
 }
 .work-list img {
+	border: 1px solid #f1f1f1;
 	border-radius: 8px;
 	margin-bottom: 16px;
 }
@@ -167,7 +159,7 @@ blockquote span::before {
 .work-list h2 {
 	font-size: 28px;
 	font-weight: 700;
-	line-height: 33.6px;
+	line-height: 1.2;
 	margin-bottom: 8px;
 }
 .work-list h2 a {
@@ -180,9 +172,6 @@ blockquote span::before {
 	display: flex;
 }
 .tags li {
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
 	background: #f1f1f1;
 	margin-right: 16px;
 	border-radius: 16px;
@@ -198,11 +187,10 @@ blockquote span::before {
 /* pagination */
 .pagination {
 	display: flex;
+	justify-content: center;
 }
 .pagination li {
 	font-size: 24px;
-	font-weight: 400;
-	line-height: 36px;
 	text-align: center;
 	margin-right: 16px;
 }
@@ -243,8 +231,6 @@ blockquote span::before {
 }
 .social li {
 	font-size: 20px;
-	font-weight: 400;
-	line-height: 30px;
 	padding: 8px 24px;
 	border-radius: 8px;
 	border: 1px solid #c1c1c1;
