@@ -374,3 +374,126 @@ h5 {
 		text-align: center;
 	}
 }
+/* blog */
+.page-title {
+	text-align: center;
+	margin: 120px 0 80px;
+}
+.page-title h1 {
+	font-size: 32px;
+	line-height: 1.2;
+	margin: 0 auto 24px;
+	width: 336px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.page-title h1::before {
+	content: '';
+	position: absolute;
+  width: 336px;
+  height: 1px;
+  background-color: #c1c1c1;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+}
+.page-title h1 .title-text {
+	padding: 0 16px;
+	z-index: 1;
+	display: block;
+	background: #fff;
+}
+.page-title .title-text::before {
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background-color: #C1C1C1;
+  border-radius: 50%;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.page-title .title-text::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background-color: #C1C1C1;
+  border-radius: 50%;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+/* blog list */
+.blog .main {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 120px;
+}
+.blog-list {
+	width: 966px;
+}
+.blog-list li {
+	display: flex;
+	margin-bottom: 64px;
+}
+.blog-list li:last-child {
+	margin-bottom: 0;
+}
+.blog-img {
+	width: 306px;
+	height: 220px;
+	overflow: hidden;
+}
+.blog-list img {
+	border-radius: 8px;
+	border: 1px solid #f1f1f1;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.blog-list .intro {
+	margin-left: 16px;
+	flex: 1;
+}
+.blog-data {
+	display: flex;
+	align-items: center;
+}
+.blog-data .date {
+	margin-right: 16px;
+}
+.blog-list h2 {
+	margin: 16px 0;
+}
+/* sidebar */
+.sidebar {
+	width: 306px;
+	border-radius: 8px;
+	background: #FAFAFA;
+	padding: 80px;
+	height: auto;
+}
+.sidebar .title {
+	position: relative;
+	padding-bottom: 4px;
+}
+.sidebar .title::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 80px;
+	height: 2px;
+	background: #1e1e1e;
+}
+.sidebar-list li {
+	margin-top: 32px;
+}
+.sidebar-list li a {
+	color: #5b5b5b;
+	font-size: 20px;
+}
